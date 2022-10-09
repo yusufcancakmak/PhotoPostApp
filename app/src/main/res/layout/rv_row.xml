@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rv_row_kullanici_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanici email"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/teal_700"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/rv_row_imageview"
+        android:layout_width="300dp"
+        android:layout_height="375dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/rv_yorumtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kullanici yorumu"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"/>
+
+
+
+
+
+</LinearLayout>

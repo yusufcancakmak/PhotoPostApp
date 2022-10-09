@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KullaniciActivity"
+    android:background="@drawable/resimapp">
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Parolanızı Giriniz"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#0097A7"
+        android:text="Kayıt ol"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mail Adresinizi Giriniz"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:text="Giriş yap"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="339dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngegg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
